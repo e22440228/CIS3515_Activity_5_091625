@@ -22,9 +22,9 @@ class TextSizeAdapter(private val c: Context, private val numberArray: Array<Int
         return position.toLong()
     }
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?)
 
-        return if(convertView != null){
+        = if(convertView != null){
             convertView as TextView
         }else{
 
@@ -34,7 +34,7 @@ class TextSizeAdapter(private val c: Context, private val numberArray: Array<Int
             text = numberArray[position].toString()
             textSize = 22f
         }
-    }
+
 
     override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup?): View? {
 
